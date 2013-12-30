@@ -23,8 +23,21 @@
 //    Implemented a parseable header format consistent across files.
 //
 ////////////////////////////////////////////////////////////////////////////////
-0%, 10%, 50%, 100%, etc.
-1, 2, 3, 4, etc.
+0%
+10%
+50%
+100%
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+etc.
 ½, ¼, etc.
 a bit of
 a couple of
