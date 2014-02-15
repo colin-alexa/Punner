@@ -1,0 +1,9 @@
+Word association learner
+ - should be able to save and load learned associations, and build on them
+ 
+corpus loader
+ - should be able to find corpora recursively within a directory and feed them to the association learner
+ 
+Language
+ - Jython looks promising right now, but we'll see if I run into any major problems
+ 

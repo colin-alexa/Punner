@@ -1,0 +1,10 @@
+## {
+##   "name": "Kate"
+## , "files": [ { "directory": "kate", "filters": ["*.cpp", "*.h", "*.ui", "CMakeLists.txt", "Find*.cmake"], "recursive": 1 } ]
+## }
+
+
+{
+  "name": "Punner",
+  "files": [ { "git": 1 } ]
+}

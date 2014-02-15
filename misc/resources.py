@@ -1,7 +1,5 @@
 from glob import glob
 
-from nltk.corpus import stopwords
-
 import unicodedata
 
 resources_root = "resources/"
@@ -10,15 +8,14 @@ resources_root = "resources/"
 
 def remove_bookend(text, delimiter, last=True, after=True):
   """
-  remove_bookend( text, delimiter, last=true, reverse=true )
+  remove_bookend( text, delimiter, last=true, after=true )
   returns the portion of text after (default) or before the last (default) or first occurrence of delimiter in text
   """
   
   index = text.rindex(delimiter) if last else text.index(delimiter)
   return text[(index+len(delimiter)+1):] if after else text[:index]
 
-non_content_words = set(stopwords.words('english'))
-
+non_content_words = set()
 for rfile in glob(resources_root + "English_Function_Words_Set/*"):
   f = open(rfile)
   non_content_words |= set(remove_bookend(f.read(), "///" ).splitlines())

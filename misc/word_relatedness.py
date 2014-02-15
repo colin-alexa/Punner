@@ -1,4 +1,4 @@
-import resources
+import resources, igraph
 
 def inc(d, key):
   """
