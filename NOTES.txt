@@ -1,0 +1,7 @@
+Relationship weights are equal to 1 over the number of cooccurences of the nodes.
+
+All nodes are connected with a weight of zero to a node of special type END.
+ This is so that "finding all nodes within n distance" is easily implemented as "find all paths of length n or less to END".
+ As a consequence, there is no simple way to find the shortest path between any two nodes that aren't immediate neighbors,
+ because for any nodes k and j, there will always be a length-2 path k -> END -> j.
+

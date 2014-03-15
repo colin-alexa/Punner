@@ -23,4 +23,12 @@ subproblems:
 Recent notes:
 ------
 
-The code in word_relatedness.py is part of the 'given a topic, generate a set of related words' problem
+The code in /misc represents (among other things) a working prototype for the word-relatedness graph.
+ The code as-is is too slow to scale to any meaningful size, for multiple reasons. The start-time lag is
+ common to Jython programs, as the system must compile all the relevant source to comply with both Python and Java
+ language specifications, AND THEN must start the jvm before the code can even begin to execute. On top of that,
+ the current structure of the algorithm to build the graph requires many read/write operations against the
+ database, which are prohibitively expensive.
+ 
+ To combat this, I plan to rewrite the code purely in Java, and change the algorithm to do most of the work
+ inmain memory in large batches and then reconcile that work with the database, hopefully reducing IO costs.

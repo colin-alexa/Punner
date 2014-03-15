@@ -17,6 +17,7 @@ def remove_bookend(text, delimiter, last=True, after=True):
 
 non_content_words = set()
 for rfile in glob(resources_root + "English_Function_Words_Set/*"):
+  print rfile
   f = open(rfile)
   non_content_words |= set(remove_bookend(f.read(), "///" ).splitlines())
   
