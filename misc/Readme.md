@@ -2,7 +2,7 @@ This directory contains the prototype for a semantic distance algorithm, describ
 
 to run it
 ```
-$ neo4jc WordGraph.java
+$ ./neo4jc WordGraph.java
 $ jython director.py
 ```
 
