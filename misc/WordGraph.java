@@ -27,7 +27,7 @@ public class WordGraph
 
     private GraphDatabaseService graphDb;
     private PathFinder<Path> allSimplePaths =
-	GraphAlgoFactory.allSimplePaths( PathExpanders.forType(RelTypes.OCCURS_WITH), 10 );
+	GraphAlgoFactory.allSimplePaths( PathExpanders.forType(RelTypes.OCCURS_WITH), 2 );
 	
     private PathFinder<Path> redundantRelationships =
         GraphAlgoFactory.allSimplePaths( PathExpanders.forType(RelTypes.OCCURS_WITH), 1 );
